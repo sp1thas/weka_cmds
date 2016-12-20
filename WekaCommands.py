@@ -18,7 +18,7 @@ choise = 1
 
 while choise:
     print 'Choise algorithm:'
-    print '1. Bagging\n2. J48\n3. MLP\n4. RandomTree\n5. RBFNetwork\n6. REPTree'
+    print '1. Bagging\n2. J48\n3. MLP\n4. RandomTree\n5. RBFNetwork\n6. REPTree\n0. EXIT'
     choise = int(raw_input('>>> '))
     if choise == 1:
         Bagging(ClassPath, FileName)
