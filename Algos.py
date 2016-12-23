@@ -1,4 +1,4 @@
-import menu, subprocess, sys, os
+import subprocess, sys, os
 
 def subprocess_cmd(command):
     process = subprocess.Popen(command,stdout=subprocess.PIPE, shell=True)

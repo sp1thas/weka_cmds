@@ -109,3 +109,11 @@ and finally choose the algorithm of your choise
 
 and get the output
 ![alt text](screenshots/5.png "Run script...")
+
+## Authors
+
+* **Simakis Panagiotis** - *Initial work*
+
+## License
+
+This project is licensed under the GNU General Public License version 3 - see the [LICENSE](LICENSE) file for details
