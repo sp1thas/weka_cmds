@@ -37,7 +37,7 @@ def NaiveBayesMultinomialText(classpath, filename):
 
 def NaiveBayesUpdateable(classpath, filename):
     command = classpath + ';'
-    command += 'weka.classifiers.bayes.NaiveBayesMultinomialUpdateable -t '
+    command += 'java weka.classifiers.bayes.NaiveBayesMultinomialUpdateable -t '
     command += filename
     subprocess_cmd(command)
 
@@ -50,14 +50,46 @@ def Bagging(classpath, filename):
     command += filename + ' -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0'
     subprocess_cmd(command)
     divider()
-
+################ MISC ################
+######################################
+def InputMappedClassifier(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.misc.InputMappedClassifier -t '
+    command += filename + ' -I -trim -W weka.classifiers.rules.ZeroR'
+    subprocess_cmd(command)
+    divider()
 
 ########### RULES ####################
 ######################################
+def DecisionTable(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.rules.DecisionTable -t '
+    command += filename + ' -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"'
+    subprocess_cmd(command)
+    divider()
+
+def JRip(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1 -t '
+    command += filename
+    subprocess_cmd(command)
+
+def OneR(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.rules.ZeroR -t '
+    command += filename
+    subprocess_cmd(command)
+
+def PART(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.rules.PART -M 2 -C 0.25 -Q 1 -t '
+    command += filename
+    subprocess_cmd(command)
+
 
 def ZeroR(classpath, filename):
     command = classpath + ';'
-    command += 'java weka.classifiers.rules.ZeroR -t '
+    command += 'java weka.classifiers.rules.OneR -B 6 -t '
     command += filename
     subprocess_cmd(command)
 
@@ -122,11 +154,36 @@ def LWL(classpath, filename):
 ############ TREES ###################
 ######################################
 
+def DecisionStump(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.trees.DecisionStump -t ' + filename
+    subprocess_cmd(command)
+    divider()
+
+def HoeffdingTree(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0 -t ' + filename
+    subprocess_cmd(command)
+    divider()
+
 def J48(classpath, filename):
     command = classpath + ';'
     command += 'java weka.classifiers.trees.J48 -C 0.25 -M 2 -t ' + filename
     subprocess_cmd(command)
     divider()
+
+def LMT(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0 -t ' + filename
+    subprocess_cmd(command)
+    divider()
+
+def RandomForest(classpath, filename):
+    command = classpath + ';'
+    command += 'java weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1 -t ' + filename
+    subprocess_cmd(command)
+    divider()
+
 
 def RandomTree(classpath, filename):
     command = classpath + ';'

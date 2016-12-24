@@ -63,26 +63,26 @@ python WekaCommands.py
 
  | Misc | Availability |
  |---|---|
- | InputMappedClassifier | - |
+ | InputMappedClassifier | ok |
  | SerializedClaassifier | - |
 
  | Rules | Availability |
  |---|---|
- | DecisionTable | - |
- | JRip | - |
+ | DecisionTable | ok |
+ | JRip | ok |
  | M5Rules | - |
- | OneR | - |
- | PART | - |
- | ZeroR | - |
+ | OneR | ok |
+ | PART | ok |
+ | ZeroR | ok |
 
  | Trees | Availability |
  |---|---|
- | DecisionStump | - |
- | HoeffdingTree | - |
+ | DecisionStump | ok |
+ | HoeffdingTree | ok |
  | J48 | ok |
- | LMT | - |
+ | LMT | ok |
  | M5P | - |
- | RandomForest | - |
+ | RandomForest | ok |
  | RandomTree | ok |
  | REPTree | ok |
 
