@@ -62,24 +62,24 @@ while not choise == '0':
         ┃   "m19": WeightedistancesHandlerWrapper
     misc
     ━━━━┓
-        ┃   "mi1": InputMappedClassifier
+        ┠── "mi1": InputMappedClassifier
         ┃   "mi2": SerializedClaassifier
     rules
     ━━━━┓
-        ┃   "r1": DecisionTable
-        ┃   "r2": JRip
+        ┠── "r1": DecisionTable
+        ┠── "r2": JRip
         ┃   "r3": M5Rules
-        ┃   "r4": OneR
-        ┃   "r5": PART
+        ┠── "r4": OneR
+        ┠── "r5": PART
         ┖── "r6": ZeroR
     trees
     ━━━━┓
-        ┃ "t1": DecisionStump
-        ┃ "t2": HoeffdingTree
+        ┠── "t1": DecisionStump
+        ┠── "t2": HoeffdingTree
         ┠── "t3": J48
-        ┃ "t4": LMT
-        ┃ "t5": M5P
-        ┃ "t6": RandomForest
+        ┠── "t4": LMT
+        ┃   "t5": M5P
+        ┠── "t6": RandomForest
         ┠── "t7": RandomTree
         ┖── "t8": REPTree
     extra
