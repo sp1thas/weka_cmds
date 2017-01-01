@@ -3,22 +3,27 @@
 import os, termcolor
 
 def WekaDir():
-    termcolor.cprint('''‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-                     /hdNdy/.      _      __        __
-                   -hNMMMMMMNhs+  | | /| / / ___   / /__ ___ _
-           `:ohdNNNNMMMMMMmoo/o/  | |/ |/ / / -_) /  '_// _ `/
-        -odNNMMMMMMMMMMMMNy       |__/|__/  \__/_/_/\_\ \_,_/                _             __    _
-     :hNNMMMMMMMMMMMMMMMMMm.      / ___/ ___ _ / /_ ___   ___ _ ___   ____  (_) ___ ___ _ / /_  (_) ___   ___
-    oNMMMMMMMMMMMMMMMMMMMNy`     / /__  / _ `// __// -_) / _ `// _ \ / __/ / / /_ // _ `// __/ / / / _ \ / _ \\
-   +mMMMMMMMMMMMMMMMMMMMNy`      \___/__\_,_/ \__/ \__/  \_, / \___//_/   /_/_ /__/\_,_/ \__/ /_/  \___//_//_/
- .yNMMMMMMMMMMMMMMMMNNmo-         / ___/ ___   __ _   __/___/__ _  ___  ___/ /  ___
-sNNmy//sdMMMMMMMNNMNs`           / /__  / _ \ /  ' \ /  ' \/ _ `/ / _ \/ _  /  (_-<
-dy/`     /o+smNs-.ydm-           \___/  \___//_/_/_//_/_/_/\_,_/ /_//_/\_,_/  /___/
-             /dy   omo
-             -mNysso:            This project is licensed under the GNU General Public License version 3
-              ./hmNd:            Author: Simakis Panagiotis simakis@autistici.org
-                                 https://github.com/sp1thas/Weka-Categorization-Commands
-‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒''',"blue")
+    termcolor.cprint(''' ‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+ _      __        __
+| | /| / / ___   / /__ ___ _
+| |/ |/ / / -_) /  '_// _ `/
+|__/|__/  \__/_/_/\_\ \_,_/                 _             __    _
+ / ___/ ___ _ / /_ ___   ___ _ ___   ____  (_) ___ ___ _ / /_  (_) ___   ___
+/ /__  / _ `// __// -_) / _ `// _ \ / __/ / / /_ // _ `// __/ / / / _ \ / _ \\
+\___/__\_,_/ \__/ \__/  \_, / \___//_/   /_/_ /__/\_,_/ \__/ /_/  \___//_//_/
+ / ___/ ___   __ _   __/___/__ _ ___  ___/ / ___                /hdNdy/.
+/ /__  / _ \ /  ' \ /  ' \/ _ `// _ \/ _  / (_-<              -hNMMMMMMNhs+
+\___/  \___//_/_/_//_/_/_/\_,_//_//_/\_,_/ /___/      `:ohdNNNNMMMMMMmoo/o/
+                                                   -odNNMMMMMMMMMMMMNy
+   This project is licensed under the           :hNNMMMMMMMMMMMMMMMMMm.
+   GNU General Public License version 3        oNMMMMMMMMMMMMMMMMMMMNy`
+                                             .yNMMMMMMMMMMMMMMMMNNmo-
+   Author: Simakis Panagiotis               sNNmy//sdMMMMMMMNNMNs`
+   mailto:sp1thas@autistici.org             dy/`     /o+smNs-.ydm-
+                                                         /dy   omo
+   URL: https://git.io/vMqU5                             -mNysso:
+ ‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒./hmNd:‒‒‒‒‒‒‒‒‒‒‒‒''',"blue", attrs=['bold'])
+
     # insert weka directory
     weka_dir = raw_input("First of all insert the installation path of Weka:\n>>> ")
     if not weka_dir.endswith('/'):
