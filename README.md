@@ -94,21 +94,23 @@ python WekaCommands.py
 ## Running
 
 run python script. First insert the installation directory of Weka.
-![alt text](screenshots/1.png "Run script...")
+> ![alt text](screenshots/1.png "Run script...")
 
 then insert the directory of the dataset
 
-![alt text](screenshots/2.png "Run script...")
+> ![alt text](screenshots/2.png "Run script...")
 
 .. the filename of dataset
 
-![alt text](screenshots/3.png "Run script...")
+> ![alt text](screenshots/3.png "Run script...")
 
 and finally choose the algorithm of your choise
-![alt text](screenshots/4.png "Run script...")
+
+> ![alt text](screenshots/4.png "Run script...")
 
 and get the output
-![alt text](screenshots/5.png "Run script...")
+
+> ![alt text](screenshots/5.png "Run script...")
 
 ## Authors
 
