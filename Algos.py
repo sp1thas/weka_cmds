@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import subprocess, sys, os
 
 def subprocess_cmd(command):
