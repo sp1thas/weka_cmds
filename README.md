@@ -102,6 +102,7 @@ python WekaCommands.py
 ## Running
 
 run python script. First insert the installation directory of Weka.
+
 > ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/1.png "Run script...")
 
 then insert the directory of the dataset
