@@ -18,16 +18,20 @@ $ python WekaCommands.py
   - termcolor
 
     Installation (run as root):
-    ```bash
+
+	```bash
     
       $ pip install termcolor
       
-      ```
+      	```
+
  - WEKA [link](http://www.cs.waikato.ac.nz/ml/weka/)
  - Your dataset
 
 
+
  ## Algorithms Availability
+
 
  | Bayes | Availability |
  |---|---|
