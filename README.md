@@ -19,11 +19,9 @@ $ python WekaCommands.py
 
     Installation (run as root):
 
-	```bash
-    
-      $ pip install termcolor
-      
-      	```
+```bash
+$ pip install termcolor
+```
 
  - WEKA [link](http://www.cs.waikato.ac.nz/ml/weka/)
  - Your dataset
