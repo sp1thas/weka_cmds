@@ -9,7 +9,7 @@ it's known that WEKA craches when the input dataset is too big. For this reason 
 ## Built and run
 
 ```bash
-$ git clone https://github.com/sp1thas/Weka-Categorization-Commands.git && cd Weka-Categorization-Commands
+$ git clone https://github.com/sp1thas/WEKACMDs.git && cd WEKACMDs
 $ python WekaCommands.py
 ```
 
