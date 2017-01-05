@@ -28,7 +28,7 @@ $ pip install termcolor
 
 
 
- ## Algorithms Availability
+## Algorithms Availability
 
 
  | Bayes | Availability |
