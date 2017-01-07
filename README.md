@@ -31,7 +31,7 @@ $ pip install -r requirements.txt
 
 $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
 ```
-```
+```bash
 
   -i, --ifile
 
@@ -46,6 +46,7 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
 
   -h,
           Prints these options
+
 ```
 
 
@@ -60,6 +61,7 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
  | NaiveBayesMultinomial | ok |
  | NaiveBayesMultinomialText | ok |
  | NaiveBayesUpdateable | ok |  
+
 
  | Functions | Availability |
  |---|---|
@@ -125,6 +127,7 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
  | EXTRA |
  |---|
  | RBFNetwork |
+
 
 
 ## Running
