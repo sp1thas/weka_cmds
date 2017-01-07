@@ -20,13 +20,33 @@ $ python WekaCommands.py
     Installation (run as root):
 
 ```bash
-$ pip install termcolor
+$ pip install -r requirements.txt
 ```
 
  - WEKA [link](http://www.cs.waikato.ac.nz/ml/weka/)
  - Your dataset
 
+## Usage
+```bash
 
+$ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
+```
+```
+
+  -i, --ifile
+
+          This is the input dataset
+
+  -o, --ofile
+          This is the output file with classification results
+          (model is not contained)
+
+  -w, --wekadir
+          Direction with WEKA software
+
+  -h,
+          Prints these options
+```
 
 ## Algorithms Availability
 
@@ -107,26 +127,19 @@ $ pip install termcolor
 
 ## Running
 
-run python script. First insert the installation directory of Weka.
+run python script with necessery arguments
+> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/1.png "run script")
 
-> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/1.png "Run script...")
+press enter to continue
+> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/2.png "enter to continue")
 
-then insert the directory of the dataset
+choose algorith
+> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/3.png "choose algorithm")
 
-> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/2.png "Run script...")
+check results
+> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/4.png "see results")
 
-.. the filename of dataset
-
-> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/3.png "Run script...")
-
-and finally choose the algorithm of your choise
-
-> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/4.png "Run script...")
-
-and get the output
-
-> ![alt text](https://github.com/sp1thas/WEKAcategorizationCMDs/raw/master/screenshots/5.png "Run script...")
-
+and output file has been generated
 ## Authors
 
 * **Simakis Panagiotis** - *Initial work*
