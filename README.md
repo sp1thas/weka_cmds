@@ -48,7 +48,9 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
           Prints these options
 ```
 
+
 ## Algorithms Availability
+
 
 
  | Bayes | Availability |
