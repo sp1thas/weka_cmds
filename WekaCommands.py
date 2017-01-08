@@ -20,13 +20,13 @@ def main(argv):
        elif opt in ("-o", "--ofile"):
            OutputFile = arg
        elif opt in ("-w", "--wekadir"):
-           if arg.endswith('/') and os.path.exist(arg+'weka.jar'):
+           if arg.endswith('/') and os.path.isfile(arg+'weka.jar'):
                WekaDirectory = arg + 'weka.jar'
            elif os.path.exists(arg+'/weka.jar'):
                WekaDirectory = arg + '/weka.jar'
 
 
-    print (FileName)
+    print (FileName,'\n',WekaDirectory)
 
     # # setup weka's directory
     # WekaDirectory = WekaDir()
