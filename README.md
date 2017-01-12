@@ -1,7 +1,6 @@
 #  Weka Categorization Commands
 ![logo](logo.png)
 
-## Python project for running categorization experiments.
 it's known that WEKA craches when the input dataset is too big. For this reason you have to run the algorithms from your terminal avoiding the GUI. Because the length of the commands is too big, I developed this programm which takes as input the installation directory of WEKA, the working directory and the filename of the dataset. Then a menu with available algorithms will appeared and you have to choose one. Finally when the algorithm has terminated the results is visible in the terminal.
 
 ---
