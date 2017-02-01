@@ -53,80 +53,81 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
 
 
 
- | Bayes | Availability |
- |---|---|
- | BayesNet | ok |
- | NaiveBayes |ok |
- | NaiveBayesMultinomial | ok |
- | NaiveBayesMultinomialText | ok |
- | NaiveBayesUpdateable | ok |  
+| Bayes                     | Availability |
+|---------------------------|--------------|
+| BayesNet                  |       ✓      |
+| NaiveBayes                |       ✓      |
+| NaiveBayesMultinomial     |       ✓      |
+| NaiveBayesMultinomialText |       ✓      |
+| NaiveBayesUpdateable      |       ✓      |
 
 
- | Functions | Availability |
- |---|---|
- | Logistic | ok |
- | MultilayerPerceptron | ok |
- | SimpleLogistic | ok |
- | SMO | ok |
+| Functions            | Availability |
+|----------------------|--------------|
+| Logistic             |       ✓      |
+| MultilayerPerceptron |       ✓      |
+| SimpleLogistic       |       ✓      |
+| SMO                  |       ✓      |
 
- | Lazy | Availability |
- |---|---|
- | IBk | ok |
- | KStar | ok |
- | LWL | ok |
 
- | Meta | Availability |
- |---|---|
- | AdaBoostM1 | - |
- | AdditiveRegression | - |
- | AttributeSelectedClassifier | - |
- | Bagging | ok |
- | ClassificationViaRegression | - |
- | CostSensitiveClassifier | - |
- | CVParameterSelection | - |
- | FilteredClassifier | - |
- | IterativeClassifierOptimizer | - |
- | LogitBoost | - |
- | MultiClassClassifier | - |
- | MultiClassClassifierUpdateable | - |
- | MultiScheme | - |
- | RandomCommittee | - |
- | RandomizableFilteredClassifier | - |
- | RandomSubSpace | - |
- | RegressionByDiscretization | - |
- | Stacking | - |
- | Vote | - |
- | WeightedistancesHandlerWrapper | - |
+| Lazy  | Availability |
+|-------|--------------|
+| IBk   |       ✓      |
+| KStar |       ✓      |
+| LWL   |       ✓      |
 
- | Misc | Availability |
- |---|---|
- | InputMappedClassifier | ok |
- | SerializedClaassifier | - |
+| Meta                           | Availability |
+|--------------------------------|--------------|
+| AdaBoostM1                     |       -      |
+| AdditiveRegression             |       -      |
+| AttributeSelectedClassifier    |       -      |
+| Bagging                        |       ✓      |
+| ClassificationViaRegression    |       -      |
+| CostSensitiveClassifier        |       -      |
+| CVParameterSelection           |       -      |
+| FilteredClassifier             |       -      |
+| IterativeClassifierOptimizer   |       -      |
+| LogitBoost                     |       -      |
+| MultiClassClassifier           |       -      |
+| MultiClassClassifierUpdateable |       -      |
+| MultiScheme                    |       -      |
+| RandomCommittee                |       -      |
+| RandomizableFilteredClassifier |       -      |
+| RandomSubSpace                 |       -      |
+| RegressionByDiscretization     |       -      |
+| Stacking                       |       -      |
+| Vote                           |       -      |
+| WeightedistancesHandlerWrapper |       -      |
 
- | Rules | Availability |
- |---|---|
- | DecisionTable | ok |
- | JRip | ok |
- | M5Rules | - |
- | OneR | ok |
- | PART | ok |
- | ZeroR | ok |
 
- | Trees | Availability |
- |---|---|
- | DecisionStump | ok |
- | HoeffdingTree | ok |
- | J48 | ok |
- | LMT | ok |
- | M5P | - |
- | RandomForest | ok |
- | RandomTree | ok |
- | REPTree | ok |
+| Misc                  | Availability |
+|-----------------------|--------------|
+| InputMappedClassifier |       ✓      |
+| SerializedClaassifier |       -      |
 
- | EXTRA |
- |---|
- | RBFNetwork |
+| Rules         | Availability |
+|---------------|--------------|
+| DecisionTable |       ✓      |
+| JRip          |       ✓      |
+| M5Rules       |       -      |
+| OneR          |       ✓      |
+| PART          |       ✓      |
+| ZeroR         |       ✓      |
 
+| Trees                      | Availability |
+|----------------------------|--------------|
+| DecisionTableDecisionStump |       ✓      |
+| HoeffdingTree              |       ✓      |
+| J48                        |       ✓      |
+| LMT                        |       ✓      |
+| M5P                        |       -      |
+| RandomForest               |       ✓      |
+| RandomTree                 |       ✓      |
+| REPTree                    |       ✓      |
+
+| Trees      | Availability |
+|------------|--------------|
+| RBFNetwork |       ✓      |
 
 
 ## Running
