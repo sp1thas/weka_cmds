@@ -48,8 +48,11 @@ $ python WekaCommands.py -i <inputfile> -o <outputfile> -w <wekadirectory>
 
 ```
 
+
 ## Demo
-[![asciicast](https://asciinema.org/a/101836.png)](https://asciinema.org/a/101836)a
+
+[![asciicast](https://asciinema.org/a/101836.png)](https://asciinema.org/a/101836)
+
 
 ## Algorithms Availability
 
